@@ -2,7 +2,7 @@
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Define the file path for the JSON file
-    $file_path = "Accounts.json";
+    $file_path = "JSON Files/Accounts.json";
 
     // Extract form data
     $name = $_POST["txtName"];
