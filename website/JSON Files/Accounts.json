@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Ewan MacKerracher",
+        "username": "monkeyman355",
+        "email": "ewanmackerracher@gmail.com",
+        "password": "Hayden05",
+        "dob": "2005-05-03",
+        "termsAgreed": false
+    },
+    {
+        "name": "Kiera Margey",
+        "username": "DjDabbles54",
+        "email": "kieramargey@gmail.com",
+        "password": "Kiera1Ewan2",
+        "dob": "2005-05-03",
+        "termsAgreed": true
+    },
+    {
+        "name": "c",
+        "username": "c",
+        "email": "c@c.com",
+        "password": "$2y$10$1lYOGmYX92YoboqTj9PwM.17n.3fjMPbyHuZ2s4rV8ZNsAgVe3Ova",
+        "dob": "2022-02-20",
+        "termsAgreed": true
+    },
+    {
+        "name": "test",
+        "username": "test",
+        "email": "test@test.co",
+        "password": "$2y$10$I0vAbZhDOBsMno1mjXBIdeVhgcOtVIfRilZNeD68ZBk9d94NRPFMC",
+        "dob": "31231-12-21",
+        "termsAgreed": true
+    }
+]

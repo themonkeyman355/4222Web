@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css Files/login.css"> 
+    <link rel="stylesheet" href="css Files/dynamicsize.css"> 
+    <link rel="stylesheet" href="css Files/Main.css"> 
+    <link rel="stylesheet" href="css Files/Nav.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="hideLogin.js"></script>
+    <script src="hideProfile.js"></script>
+    <title>Register</title>
+
+    <style>
+
+        .wrapper2{
+            margin-top: 120px;
+        }
+    </style>
+</head>
+<body>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <header>
+        <a href="index.php">
+            <img src="Images/SongShack.png" alt="Logo" id="logo">
+        </a>  
+        <nav class="navigation">
+            <!-- Navigation links -->
+            <a href="index.php">Home Page</a>
+            <a href="ranking.php">Ranking Page</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <span id="usernameDisplay"></span>
+            <a href="profile.html" id="profileLink"><ion-icon name="person-outline"></ion-icon></a>
+        </nav>
+    </header>
+    <div popover class="wrapper2">
+        <form method="post" action="register.php">
+            <div class="form-box register">
+                <h2>Register</h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <input type="text" name="txtName" required>
+                    <label for="txtName">Name</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="txtUsername" required>
+                    <label for="txtUsername">Username</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" name="txtEmail" required>
+                    <label for="txtEmail">Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" id="txtPassword" name="txtPassword" required>
+                    <label for="txtPassword">Password</label>
+                    
+                </div>
+                
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="calendar-outline"></ion-icon>
+                    </span>
+                    <input type="date" name="txtDOB" required>
+                </div>
+
+                <div class="remember-forget">
+                    <input type="checkbox" name="terms">
+                    <label for="terms">Agree to terms & conditions</label>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <div class="login-register">
+                    <p>Already have an account? <a href="login.html" class="login-link">Login</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+
+        
+</body>
+
+</html>

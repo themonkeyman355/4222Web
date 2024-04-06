@@ -1,0 +1,71 @@
+:root {
+    --backgroundColour: #1A1A1A;
+    --mainColour: #45A29E;
+    --dark-text: #1A1A1A;
+    --text-color-light: #888; /* Light text color for contrast */
+}
+/* Review System Styles */
+#chat-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: var(--backgroundColour);
+}
+
+#message-input-container {
+    margin-bottom: 10px;
+}
+
+#message-input {
+    width: 80%;
+    padding: 5px;
+    margin-right: 5px;
+    color: var(--mainColour);
+    background-color: transparent;
+    border: 1px solid var(--mainColour);
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: var(--mainColour);
+    color: var(--backgroundColour);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: var(--backgroundColour);
+    color: var(--mainColour);
+}
+
+#chat-output {
+    max-height: 300px;
+    overflow-y: scroll;
+    border-top: 1px solid #ccc;
+}
+
+.message-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    color: var(--text-color-light);
+}
+
+.message-row p {
+    margin: 0;
+    word-break: break-word;
+    flex-grow: 1;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+    margin-left: 10px;
+    white-space: nowrap;
+}

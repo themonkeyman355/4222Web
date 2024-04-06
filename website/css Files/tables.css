@@ -1,0 +1,29 @@
+:root {
+    --backgroundColour: #1A1A1A;
+    --mainColour: #45A29E;
+    --dark-text: #1A1A1A;
+    --text-color-light: #888; /* Light text color for contrast */
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px 2px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--backgroundColour);
+}
+
+tr:nth-child(even) {
+    background-color: var(--backgroundColour);
+}
+
+tr {
+    margin-bottom: 5px;
+}

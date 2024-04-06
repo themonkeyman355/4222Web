@@ -1,0 +1,150 @@
+:root {
+    --backgroundColour: #1A1A1A;
+    --mainColour: #45A29E;
+    --dark-text: #1A1A1A;
+    --text-color-light: #888; /* Light text color for contrast */
+}
+/* Featured Albums Styles */
+/* Apply consistent flex properties to all album cards */
+.albumCard {
+    flex: 1 0 30%; /* Gives each album card the instruction to flex with an initial basis of 30% */
+    text-align: center;
+    background-color: var(--backgroundColour);
+    padding: 25px;
+    margin-bottom: 20px; /* Ensures margin at the bottom of each album card */
+    border: 1px solid var(--mainColour);
+    border-radius: 5px;
+}
+
+.albumCard img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.albumCard h3 {
+    color: var(--mainColour);
+    margin-top: 10px;
+}
+
+.albumCard p {
+    color: #888;
+}
+
+.albumCard a {
+    color: var(--mainColour);
+    text-decoration: underline;
+}
+
+#featuredAlbums {
+    display: flex;
+    flex-direction: row; /* Corrects the direction if albums are meant to be stacked vertically */
+    align-items: center; /* Center-align the album containers */
+    gap: 20px; /* Adds space between album containers */
+}
+
+/* Optional: If the intention is for a horizontal layout or a wrap */
+#featuredAlbums {
+    flex-wrap: wrap; /* Allows album cards to wrap onto the next line if there's not enough space */
+    justify-content: center; /* Centers the content horizontally */
+}
+
+
+.songsTable {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    background-color: var(--backgroundColour);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--mainColour); /* Adjusted to use mainColour for border */
+    border-radius: 5px;
+
+}
+
+/* Album Details Styles */
+.albumsContainer {
+    display: flex;
+    justify-content: space-around; /* This will space out the albumDetails evenly */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if the container is too narrow */
+    text-align: center;
+    align-items: center;
+}
+
+.albumDetails {
+    flex: 1;
+    margin: 10px; /* Keeps your original margin */
+    text-align: center; /* Ensures text within albumDetails is aligned to the left */
+    background-color: var(--backgroundColour); /* Uses your custom property for background color */
+    padding: 15px; /* Adds padding inside each albumDetails for spacing */
+    margin-bottom: 20px; /* Adds extra margin at the bottom */
+    border: 1px solid var(--mainColour); /* Uses your custom property for border color */
+    border-radius: 5px; /* Rounds the corners of the albumDetails sections */
+    max-width: calc(33.333% - 20px); /* Controls the maximum width of each album detail section */
+}
+
+.individualDetails {
+    flex: 1;
+    margin: 10px; /* Keeps your original margin */
+    text-align: left; /* Ensures text within albumDetails is aligned to the left */
+    background-color: var(--backgroundColour); /* Uses your custom property for background color */
+    padding: 15px; /* Adds padding inside each albumDetails for spacing */
+    margin-bottom: 20px; /* Adds extra margin at the bottom */
+    border: 1px solid var(--mainColour); /* Uses your custom property for border color */
+    border-radius: 5px; /* Rounds the corners of the albumDetails sections */
+    
+}
+
+.albumDetails img {
+    max-width: 100%; /* Ensures image does not exceed its container's width */
+    height: auto; /* Maintains the image aspect ratio */
+    border-radius: 5px; /* Rounds the corners of the images */
+}
+
+
+.albumDetails h3 {
+    color: var(--mainColour);
+    margin-top: 10px;
+}
+
+.albumDetails p
+{
+    color: var(--text-color-light);
+}
+
+.albumDetails a {
+    color: var(--mainColour);
+    text-decoration: underline;
+}
+
+/* Album Songs Styles */
+.albumSongs {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+    background-color: var(--backgroundColour);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--mainColour); /* Adjusted to use mainColour for border */
+    border-radius: 5px;
+}
+
+.albumSongs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.albumSongs h3 {
+    color: var(--mainColour);
+    margin-top: 10px;
+}
+
+.albumSongs p {
+    color: var(--text-color-light);
+}
+
+.albumSongs a {
+    color: var(--mainColour);
+    text-decoration: underline;
+}

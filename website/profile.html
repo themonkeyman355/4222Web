@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css Files/dynamicsize.css"> 
+    <link rel="stylesheet" href="css Files/Main.css"> 
+    <link rel="stylesheet" href="css Files/Nav.css">          
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="localStorageReader.js"></script>  
+    <script src="hideLogin.js"></script>
+    <script src="hideProfile.js"></script>
+    <script src="logout.js"></script>
+
+    <title>Profile Page</title>
+    <style>
+        .userData {
+            flex: 1;
+            margin: 10px;
+            text-align: left;
+            background-color: #1A1A1A; /* Dark background */
+            padding: 15px;
+            border: 1px solid var(--mainColour);
+            border-radius: 5px;
+            max-width: 500px; /* Set a maximum width for each album card */
+
+        }
+        h3 {
+            font-weight: normal;
+        }
+        #showPasswordBtn {
+            background: transparent;
+            border: 1px solid var(--mainColour);
+            outline: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 0.7em;
+            color: var(--mainColour);
+            padding: 6px 15px; /* Adjust padding as needed */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        #showPasswordBtn:hover {
+            background-color: var(--mainColour);
+            color: var(--backgroundColour);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.php">
+            <img src="Images/SongShack.png" alt="Logo" id="logo">
+        </a>  
+        <nav class="navigation">
+            <!-- Navigation links -->
+            <a href="index.php">Home Page</a>
+            <a href="ranking.php">Ranking Page</a>
+            <a href="login.html" id="loginLink">Login</a>
+            <span id="usernameDisplay"></span>
+            <a href="profile.html" id="profileLink"><ion-icon name="person-outline"></ion-icon></a>
+        </nav>
+    </header>
+
+    <main>
+        <br>
+        <section id="about">
+            <h2>User Details</h2>
+            <p>Your account details:</p>
+            <div id="userDetails" class="userData">
+                <!-- User details will be displayed here -->
+            </div>
+        </section>
+        <button type="button" class="btn" onclick="logout()">Log Out</button>
+        <br><br><br>
+    </main>
+
+    <footer>
+        <p>&copy; Ewan MacKerracher : 2024 SongShack</p>
+    </footer>
+
+</body>
+</html>

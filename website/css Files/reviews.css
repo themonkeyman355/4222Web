@@ -1,0 +1,105 @@
+:root {
+    --backgroundColour: #1A1A1A;
+    --mainColour: #45A29E;
+    --dark-text: #1A1A1A;
+    --text-color-light: #888; /* Light text color for contrast */
+}
+#reviewsSection {
+    margin-top: 20px;
+}
+.reviews {
+    flex: 1;
+    text-align: center;
+    background-color: var(--backgroundColour);
+    padding: 25px;
+    margin-bottom: 20px; /* Ensures margin at the bottom of each album card */
+    border: 1px solid var(--mainColour);
+    border-radius: 5px;
+}
+.review {
+    margin-bottom: 20px; /* Adjust the value to increase or decrease the gap */
+    padding: 10px;
+    border-bottom: 1px solid var(--mainColour); /* Optional: adds a line between reviews */
+    /* Further styling */
+    text-align: left;
+    background-color: --backgroundColour; /* Light grey background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.review-username {
+    text-decoration: underline; /* This adds the underline */
+    /* Additional styling */
+    font-weight: bold; /* Optional: Makes the username bold */
+}
+
+.reviews input[type="number"],
+.reviews textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid var(--mainColour); /* Using main color for border */
+    background-color: var(--backgroundColour); /* Background color */
+    color: var(--text-color-light); /* Text color */
+    border-radius: 4px;
+}
+
+.reviews button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--mainColour); /* Main button color */
+    color: var(--backgroundColour); /* Contrast text color for readability */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+.reviews button[type="submit"]:hover {
+    background-color: darken(var(--mainColour), 10%); /* Darken function requires a preprocessor like SASS */
+    color:var(--mainColour);
+    /* For a pure CSS approach, manually specify a darker shade of --mainColour for the hover state */
+}
+
+.review-date {
+    font-size: 0.7rem; /* Smaller text */
+    color: grey; /* Grey color */
+}
+
+
+
+/* Star rating system css*/
+.star-rating {
+    direction: rtl; /* Right-to-left to allow filling stars from right to left */
+    font-size: 0; /* Remove space between inline-block elements */
+}
+
+.star-rating .star {
+    display: none; /* Hide the radio inputs */
+}
+
+.star-rating label {
+    font-size: 30px; /* Size of stars */
+    color: #ccc; /* Default star color */
+    cursor: pointer;
+}
+
+.star-rating label:before {
+    content: "\2605"; /* Unicode star character */
+    position: relative;
+    font-family: Arial, sans-serif; /* Ensure star character displays correctly */
+}
+
+.star-rating input:checked ~ label {
+    color: var(--mainColour); /* Highlight color for selected stars */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: var(--mainColour); /* Hover state color */
+}
+
+.review-stars {
+    font-size: 1.5rem;
+    color: var(--mainColour);
+}

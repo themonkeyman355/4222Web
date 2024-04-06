@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "Cover Photo": "Images/Thriller-Michael-Jackson.png",
+        "title": "Thriller",
+        "artist": "Michael Jackson",
+        "genre": "Pop, post-disco, funk, rock",
+        "songs": [
+            {"track": 1, "title": "Wanna Be Startin' Somethin'", "runtime": "6:02"},
+            {"track": 2, "title": "Baby Be Mine", "runtime": "4:20"},
+            {"track": 3, "title": "The Girl Is Mine", "runtime": "3:42"},
+            {"track": 4, "title": "Thriller", "runtime": "5:57"},
+            {"track": 5, "title": "Beat It", "runtime": "4:18"},
+            {"track": 6, "title": "Billie Jean", "runtime": "4:54"},
+            {"track": 7, "title": "Human Nature", "runtime": "4:05"},
+            {"track": 8, "title": "P.Y.T. (Pretty Young Thing)", "runtime": "3:58"},
+            {"track": 9, "title": "The Lady in My Life", "runtime": "4:58"}
+        ],
+        "totalTime": "42:19",
+        "releaseYear": 1982,
+        "producer": "Quincy Jones",
+        "recommendationScore": 9.8,
+        "recommendationDescription": "Michael Jackson's Thriller has become the best-selling album of all time, mixing pop and post-disco with groundbreaking production and iconic music videos.",
+        "albumLocation": "Albums.php?key=1"
+    },
+    {
+            
+        "id": 2,
+        "Cover Photo": "Images/GNR-Appetite-For-Destruction.jpg",
+        "title": "Appetite for Destruction",
+        "artist": "Guns N' Roses",
+        "genre": "Hard rock, heavy metal",
+        "songs": [
+            {"track": 1, "title": "Welcome to the Jungle", "runtime": "4:32"},
+            {"track": 2, "title": "It's So Easy", "runtime": "3:21"},
+            {"track": 3, "title": "Nightrain", "runtime": "4:29"},
+            {"track": 4, "title": "Out ta Get Me", "runtime": "4:20"},
+            {"track": 5, "title": "Mr. Brownstone", "runtime": "3:46"},
+            {"track": 6, "title": "Paradise City", "runtime": "6:46"},
+            {"track": 7, "title": "My Michelle", "runtime": "3:39"},
+            {"track": 8, "title": "Think About You", "runtime": "3:50"},
+            {"track": 9, "title": "Sweet Child o' Mine", "runtime": "5:56"},
+            {"track": 10, "title": "You're Crazy", "runtime": "3:25"},
+            {"track": 11, "title": "Anything Goes", "runtime": "3:25"},
+            {"track": 12, "title": "Rocket Queen", "runtime": "6:13"}
+        ],
+        "totalTime": "53:46",
+        "releaseYear": 1987,
+        "producer": "Mike Clink",
+        "recommendationScore": 9.2,
+        "recommendationDescription": "Guns N' Roses' debut album, 'Appetite for Destruction,' is a landmark in rock music, featuring relentless energy, raw power, and timeless tracks.",
+        "albumLocation": "Albums.php?key=2"
+    },
+    {
+            "id": 3,
+            "Cover Photo": "Images/Lovejoy-Wake-Up-And-Its-Over.png",
+            "title": "Wake Up & Its Over",
+            "artist": "Lovejoy",
+            "genre": "Indie Rock",
+            "songs": [
+                {"track": 1, "title": "Portrait of a Blank State", "runtime": "3:47"},
+                {"track": 2, "title": "Call Me What You Like", "runtime": "3:46"},
+                {"track": 3, "title": "Consequences", "runtime": "3:10"},
+                {"track": 4, "title": "Warsaw", "runtime": "3:30"},
+                {"track": 5, "title": "Scum", "runtime": "3:52"},
+                {"track": 6, "title": "It's Golden Hour Somewhere", "runtime": "3:24"}
+            ],
+            "totalTime": "21:29",
+            "releaseYear": 2023,
+            "producer": "Lovejoy, Mark Crew, Dan Priddy",
+            "recommendationScore": 9.2,
+            "recommendationDescription": "Lovejoy's 'Wake Up & Its Over' (2021) is a captivating track that delivers a blend of infectious melodies and introspective lyrics, showcasing the band's musical prowess and leaving a lasting impression.",
+            "albumLocation": "Albums.php?key=3"
+    }
+]
+  
